@@ -1,0 +1,43 @@
+.exchange-descript > h2 {
+  background-color: #1e6c93;
+  color: white;
+  font-family:'Amatic SC', cursive;
+  font-size:  1.875em;
+  padding: 2vw;
+  text-align: center;
+}
+
+.container{
+  border-bottom: 1px solid black;
+  margin: 3.125rem;
+}
+
+#icon, #iconTwo, #iconThree, #iconFour{
+  float: right;
+  justify-content: space-between; 
+  max-width: 1.875rem;
+  
+}
+
+.study-exchange{
+  color: #1e6c93;
+  cursor: pointer;
+  font-family: 'Spectral', serif;
+  font-size: 1.5rem;
+  font-weight: lighter;
+  margin: 2em 0 0 1em;
+  padding: 0.5em;
+  position: relative;
+  
+}
+
+.study-exchange-text{
+  font-family: 'Spectral', serif;
+  font-size: 1.1em;
+  line-height: 1.3em;
+  margin: 0 1em 0 1em;
+  padding-bottom: 1.25rem;
+  text-align: justify;
+  text-indent: 2%;
+  display: none;
+}
