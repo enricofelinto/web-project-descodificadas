@@ -1,10 +1,13 @@
-function getElemID() {
-  const elem = ['title','textOff','icon','titleTwo', 'textTwo','#iconTwo','titleThree','textThree','#iconThree','titleFour','textFour','#iconFour']
+const elem = ['title','textOff','icon','titleTwo', 'textTwo','#iconTwo','titleThree','textThree','#iconThree','titleFour','textFour','#iconFour']
 
-  for(let i = 0; i < elem.length; i++ ) {
-    elem[i] = document.getElementById(i)
+function getElemID(list) {
+
+  for(let i = 0; i < list.length; i++ ) {
+    list[i] = document.getElementById(i)
   }
 }
+
+getElemID(elem);
 
 let isVisible = false
 let isVisibleTwo = false
