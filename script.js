@@ -1,44 +1,36 @@
-const title = document.getElementById('title')
-const textOff = document.getElementById('textOff')
-const icon = document.querySelector('#icon')
+function getElemID() {
+  const elem = ['title','textOff','icon','titleTwo', 'textTwo','#iconTwo','titleThree','textThree','#iconThree','titleFour','textFour','#iconFour']
 
-const titleTwo = document.getElementById('titleTwo')
-const textTwo = document.getElementById('textTwo')
-const iconTwo = document.querySelector('#iconTwo')
-
-const titleThree = document.getElementById('titleThree')
-const textThree = document.getElementById('textThree')
-const iconThree = document.querySelector('#iconThree')
-
-const titleFour = document.getElementById('titleFour')
-const textFour = document.getElementById('textFour')
-const iconFour = document.querySelector('#iconFour')
+  for(let i = 0; i < elem.length; i++ ) {
+    elem[i] = document.getElementById(i)
+  }
+}
 
 let isVisible = false
 let isVisibleTwo = false
 let isVisibleThree = false
 let isVisibleFour = false
 
-title.onclick = () => {
-  textOff.style.display = isVisible ? 'block' : 'none'
-  icon.style.transform = isVisible ? 'rotate(180deg)' : 'rotate(0deg)'
+elem[0].onclick = () => {
+  elem[1].style.display = isVisible ? 'block' : 'none'
+  elem[2].style.transform = isVisible ? 'rotate(180deg)' : 'rotate(0deg)'
   isVisible = !isVisible
 }
 
-titleTwo.onclick = () => {
-  textTwo.style.display = isVisibleTwo ? 'block' : 'none'
-  iconTwo.style.transform = isVisibleTwo ? 'rotate(180deg)' : 'rotate(0deg)'
+elem[3].onclick = () => {
+  elem[4].style.display = isVisibleTwo ? 'block' : 'none'
+  elem[5].style.transform = isVisibleTwo ? 'rotate(180deg)' : 'rotate(0deg)'
   isVisibleTwo = !isVisibleTwo
 }
 
-titleThree.onclick = () => {
-  textThree.style.display = isVisibleThree ? 'block' : 'none'
-  iconThree.style.transform = isVisibleThree ? 'rotate(180deg)' : 'rotate(0deg)'
+elem[6].onclick = () => {
+  elem[7].style.display = isVisibleThree ? 'block' : 'none'
+  elem[8].style.transform = isVisibleThree ? 'rotate(180deg)' : 'rotate(0deg)'
   isVisibleThree = !isVisibleThree
 }
 
-titleFour.onclick = () => {
-  textFour.style.display = isVisibleFour ? 'block' : 'none'
-  iconFour.style.transform = isVisibleFour ? 'rotate(180deg)' : 'rotate(0deg)'
+elem[9].onclick = () => {
+  elem[10].style.display = isVisibleFour ? 'block' : 'none'
+  elem[11].style.transform = isVisibleFour ? 'rotate(180deg)' : 'rotate(0deg)'
   isVisibleFour = !isVisibleFour
 }
